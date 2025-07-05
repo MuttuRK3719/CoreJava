@@ -25,7 +25,8 @@ public class Main {
 //        personDetails.displayEmployee();
 //        personDetails.displayStudent();
 //        personDetails.displayPerson(101);
-        UserInput.ExpectingChoice();
+//        UserInput.ExpectingChoice();
+            UserInput2.choice();
 
     }
 }
