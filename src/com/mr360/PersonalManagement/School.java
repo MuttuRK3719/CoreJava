@@ -4,5 +4,4 @@ import java.util.List;
 
 public class School {
     List<Student> studentAdmissionList=PersonDetails.studentList;
-
 }
