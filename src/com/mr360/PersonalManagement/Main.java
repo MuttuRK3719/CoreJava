@@ -27,9 +27,7 @@ public class Main {
 //        personDetails.displayPerson(101);
 //        UserInput.ExpectingChoice();
             UserInput.ExpectingChoice();
-            Student s=new Student();
-            s.getMarkSheet(101);
-            Employee e=new Employee();
-            e.getSalarySlip(201);
+
+
     }
 }

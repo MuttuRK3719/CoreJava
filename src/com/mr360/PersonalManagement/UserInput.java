@@ -10,7 +10,7 @@ public class UserInput {
         int n=0;
         do{
             System.out.println("Enter the number :");
-            System.out.println("Choose 1 for adding the person \nChoose 2 for updating  the person details \nChoose 3 for Displaying  the person details \nChoose 4 for deleting the person \nChoose 5 for Student details \nChoose 6 for Employee details \nChoose 9 for Exit");
+            System.out.println("Choose 1 for adding the person \nChoose 2 for updating  the person details \nChoose 3 for Displaying  the person details \nChoose 4 for deleting the person \nChoose 5 for Student details \nChoose 6 for Employee details\nChoose 7 to getEmployee salarySlip\nChoose 8 for Student Marks \nChoose 9 for Exit");
             n= sc.nextInt();
             switch (n){
                 case 1: {
@@ -42,7 +42,19 @@ public class UserInput {
                     int k=sc.nextInt();
                     break;
                 }
+                case 7:{
+                    Employee e=new Employee();
+                    System.out.println("Enter the Employee Id");
+                    e.getSalarySlip(sc.nextInt());
+                }
+                case 8:{
+                    Student s=new Student();
+                    System.out.println("Enter the Student Id");
+                    s.getMarkSheet(sc.nextInt());
+                }
+
                 default:
+                    if(n!=9)
                     System.out.println("Enter correct choice");
             }
         }while(n!=9);
