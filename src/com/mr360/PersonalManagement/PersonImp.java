@@ -5,14 +5,15 @@ abstract class PersonImp implements Person{
     private int id;
     private  String name;
     private String email;
+    public PersonImp(){
 
+    }
     @Override
     public String toString() {
-        return "PersonImp{" +
+        return
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+                ", email='" + email + '\'';
     }
 
     public PersonImp(int id, String name, String email) {

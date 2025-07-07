@@ -12,10 +12,10 @@ public class Main {
         personDetails.addPerson(new Student(102,"dhanush","dhanush@gmail.com",100));
         personDetails.addPerson(new Student(103,"Sidd","Sidd@gmail.com",100));
         personDetails.addPerson(new Student(104,"Darshan","Darshan@gmail.com",100));
-        personDetails.addPerson(new Employee(201,"muttu Employee","Darshan@gmail.com"));
-        personDetails.addPerson(new Employee(202,"dhanush Employee","Darshan@gmail.com"));
-        personDetails.addPerson(new Employee(203,"Sidd Employee","Darshan@gmail.com"));
-        personDetails.addPerson(new Employee(204,"Darshan Employee","Darshan@gmail.com"));
+        personDetails.addPerson(new Employee(201,"muttu Employee","muttu@gmail.com",100000));
+        personDetails.addPerson(new Employee(202,"dhanush Employee","dhanush@gmail.com",50000));
+        personDetails.addPerson(new Employee(203,"Sidd Employee","Sidd@gmail.com",65000));
+        personDetails.addPerson(new Employee(204,"Darshan Employee","Darshan@gmail.com",35000));
 //        System.out.println(personDetails.displayPerson(204));
 //        personDetails.updatePerson(204,new Employee(204,"DharshanKumar","DharshanKumar@gmail.com"));
 //        System.out.println(personDetails.displayPerson(204));
@@ -26,7 +26,10 @@ public class Main {
 //        personDetails.displayStudent();
 //        personDetails.displayPerson(101);
 //        UserInput.ExpectingChoice();
-            UserInput2.choice();
-
+            UserInput.ExpectingChoice();
+            Student s=new Student();
+            s.getMarkSheet(101);
+            Employee e=new Employee();
+            e.getSalarySlip(201);
     }
 }

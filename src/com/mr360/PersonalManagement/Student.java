@@ -6,6 +6,9 @@ public class Student extends PersonImp{
         super(id, name, email);
         this.marks=marks;
     }
+    public Student(){
+
+    }
     @Override
     public void checkIn(String time) {
         System.out.println("Student check In"+time);
@@ -15,6 +18,15 @@ public class Student extends PersonImp{
         System.out.println("Student check out"+time);
     }
     void study(){
-        System.out.println("Student is studing");
+        School s=new School();
+        System.out.println("Student is studing in "+s.getSchoolName()+"Located in "+s.getSchoolLocation());
+
+    }
+    void getMarkSheet(int id){
+        School.getMarkSheet(id);
+    }
+
+    public double getMarks() {
+        return marks;
     }
 }

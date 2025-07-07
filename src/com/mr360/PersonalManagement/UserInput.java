@@ -69,7 +69,8 @@ public class UserInput {
             String name=sc.next();
             System.out.println("Enter the Employee email: ");
             String email=sc.next();
-            Employee e=new Employee(id,name,email);
+            System.out.println("Enter the salary of Emp");
+            Employee e=new Employee(id,name,email,sc.nextDouble());
             if(p.addPerson(e)) System.err.println("Employee is added successfully");
             else System.err.println("We are not able to add the Employee details");
         }
@@ -97,7 +98,8 @@ public class UserInput {
             String name=sc.next();
             System.out.println("Enter the Employee email: ");
             String email=sc.next();
-            Employee e=new Employee(id,name,email);
+            System.out.println("Enter the salary of Emp");
+            Employee e=new Employee(id,name,email,sc.nextDouble());
             if(p.updatePerson(id,e)) System.err.println("Employee is added successfully");
             else System.err.println("We are not able to add the Employee details");
         }
